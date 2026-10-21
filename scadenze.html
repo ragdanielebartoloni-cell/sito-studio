@@ -568,9 +568,9 @@
 
   /* Come lavoriamo from the mockup (COME LAVORIAMO .png, 2026-10-21) */
   .metodo{ background:#fff; padding-bottom:88px; }
-  .metodo-hero{ display:grid; grid-template-columns:minmax(0, 50fr) minmax(0, 50fr); align-items:center; border-bottom:1px solid var(--hairline); }
-  .metodo-text{ position:relative; z-index:1; padding:56px 0 56px max(24px, calc((100vw - 1200px) / 2 + 24px)); margin-right:-8%; color:#1b2433; }
-  .metodo .h2{ font-size:clamp(30px, 2.8vw, 46px); white-space:nowrap; line-height:1.15; color:#141c28; margin:28px 0 0; text-align:left; letter-spacing:0; }
+  .metodo-hero{ display:grid; grid-template-columns:minmax(0, 52fr) minmax(0, 48fr); align-items:center; border-bottom:1px solid var(--hairline); }
+  .metodo-text{ position:relative; z-index:1; padding:56px 0 56px max(24px, calc((100vw - 1200px) / 2 + 24px)); margin-right:0; padding-right:56px; color:#1b2433; }
+  .metodo .h2{ font-size:clamp(30px, 2.8vw, 44px); line-height:1.15; color:#141c28; margin:28px 0 0; text-align:left; letter-spacing:0; }
   .metodo-lead{ font-size:clamp(17px, 1.4vw, 21px); line-height:1.55; color:#26303f; max-width:27em; margin:0; text-align:left; }
   .metodo-photo{ align-self:stretch; min-height:clamp(340px, 34vw, 520px); position:relative; }
   .metodo-photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:70% 60%; -webkit-mask-image:linear-gradient(90deg, transparent 0, rgba(0,0,0,.35) 22%, #000 46%); mask-image:linear-gradient(90deg, transparent 0, rgba(0,0,0,.35) 22%, #000 46%); }
@@ -592,6 +592,51 @@
     .metodo-steps li{ padding:0 4px; }
     .metodo-steps li + li{ border-left:0; border-top:1px solid var(--hairline); padding-top:36px; }
   }
+
+  /* Servizi as three cards (SERVIZI.png v2, 2026-10-21) */
+  #servizi{ background:linear-gradient(180deg, #fbfaf8 0%, #ffffff 60%); padding-bottom:96px; }
+  .svc-head{ text-align:center; padding:64px 20px 8px; }
+  .center-k{ justify-content:center; }
+  .center-k::after{ flex:0 0 clamp(80px, 18vw, 240px); }
+  #servizi .svc-head .h2{ font-size:clamp(30px, 3.6vw, 52px); line-height:1.15; color:#141c28; margin:18px 0 0; }
+  #servizi .svc-head .h2::after{ content:none; }
+  .svc-head .storia-rule{ margin:22px auto 18px; }
+  .svc-sub{ font-family:var(--serif); font-size:clamp(17px, 1.5vw, 21px); color:#2c3442; margin:0; }
+  #servizi > .inner{ max-width:1360px; }
+  #servizi .areas{ display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:18px; border:0; margin:44px 0 0; align-items:stretch; }
+  #servizi .area{ display:block; padding:28px 28px 32px; border:1px solid #e6e2dc; border-radius:6px; background:#fff; box-shadow:0 1px 2px rgba(20,28,40,.03); }
+  .area-head{ display:flex; align-items:center; gap:20px; }
+  .area-ico{ flex:none; width:64px; height:64px; border-radius:50%; background:#f6f1ea; display:grid; place-items:center; color:#15223a; }
+  .area-ico svg{ width:32px; height:32px; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+  #servizi .area h3{ font-size:clamp(22px, 1.8vw, 27px); line-height:1.2; }
+  #servizi .area h3::after{ content:""; display:block; width:32px; height:2px; background:linear-gradient(90deg, #6b4fd0, #b03ca6); margin-top:14px; }
+  #servizi .area-list, #servizi .area-list.short{ columns:1; margin-top:24px; }
+  #servizi .area-list li{ padding:0 0 5px 18px; font-size:16px; line-height:1.45; color:#26303f; }
+  #servizi .area-list li::before{ width:5px; height:5px; border-radius:50%; top:.6em; left:2px; background:#26303f; }
+  @media (max-width:1100px){ #servizi .areas{ grid-template-columns:1fr 1fr; } #area-caf{ grid-column:1 / -1; } }
+  @media (max-width:700px){ #servizi .areas{ grid-template-columns:1fr; } #servizi .area{ padding:24px 20px 26px; } }
+
+  /* Scadenze in the new style */
+  #scadenze.tile{ background:#fff; }
+  #scadenze .scad-grid > div:first-child{ padding-top:8px; }
+  #scadenze .h2{ font-size:clamp(32px, 3.2vw, 48px); line-height:1.15; color:#141c28; margin-top:24px; }
+  #scadenze .scad-grid .h2::after{ width:44px; height:2px; background:#3d5a99; margin:24px 0 0; }
+  #scadenze .lead{ font-family:var(--font); font-size:clamp(16px, 1.3vw, 19px); line-height:1.6; color:#26303f; max-width:26em; }
+  #scadenze .note{ color:#6b7280; }
+  #scadenze .calendar{ border:1px solid #e6e2dc; border-radius:6px; box-shadow:0 1px 2px rgba(20,28,40,.03); overflow:hidden; }
+  #scadenze .calendar header{ background:#15223a; color:#fff; border-bottom:0; }
+  #scadenze .calendar header b{ color:#fff; }
+  #scadenze .calendar header span{ color:#c9d1de; }
+  #scadenze .day b{ color:#15223a; }
+  #scadenze .day small{ color:#8a6a2b; letter-spacing:.12em; }
+  #scadenze .cal-row .what{ color:#141c28; }
+  #scadenze .cal-add{ border-color:#15223a; color:#15223a; background:#fff; }
+  #scadenze .cal-add:hover{ background:#15223a; color:#fff; }
+  #scadenze .cal-toggle, #scadenze .calendar > a, #scadenze .calendar > button{ color:#15223a; }
+
+  /* Lo Staff: bright gold names and circles (2026-10-21) */
+  #chi-siamo .person .avatar{ border:2px solid #d4a514; }
+  #chi-siamo .person .name{ color:#c8960c; font-weight:500; }
 </style>
 </head>
 <body>
@@ -645,7 +690,7 @@
   <section id="scadenze" class="tile parchment" aria-labelledby="h-scad">
     <div class="inner scad-grid">
       <div>
-        <p class="kicker">Scadenze del mese</p>
+        <p class="storia-kicker"><span>Scadenze del mese</span></p>
         <h1 id="h-scad" class="h2">Le date da non perdere.</h1>
         <p class="lead">Le scadenze fiscali, previdenziali e del lavoro del mese in corso, aggiornate il primo di ogni mese.</p>
         <p class="note">Elenco indicativo. Verificare sempre con lo Studio prima di procedere.</p>
