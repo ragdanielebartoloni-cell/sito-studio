@@ -554,6 +554,17 @@
     .storia-photos{ min-height:0; height:clamp(320px, 90vw, 560px); }
     .storia-curves path:first-child{ display:none; }
   }
+
+  /* Servizi: three areas (SERVIZI.png, 2026-10-21) */
+  .areas{ border-top:1px solid var(--hairline); margin-bottom:96px; }
+  .area{ display:grid; grid-template-columns:minmax(220px, 1fr) minmax(0, 2.4fr); gap:24px 56px; padding:48px 0; border-bottom:1px solid var(--hairline); text-align:left; }
+  .area-n{ display:block; font-family:var(--serif); font-size:15px; letter-spacing:.3em; color:#8a8a8a; margin-bottom:12px; }
+  .area h3{ font-size:clamp(24px, 2.2vw, 32px); line-height:1.2; color:#141c28; margin:0; }
+  .area-list{ list-style:none; margin:0; padding:0; columns:2; column-gap:48px; }
+  .area-list.short{ columns:1; }
+  .area-list li{ break-inside:avoid; position:relative; padding:0 0 12px 22px; font-size:16px; line-height:1.5; color:#333; }
+  .area-list li::before{ content:""; position:absolute; left:2px; top:.72em; width:8px; height:1px; background:#15223a; }
+  @media (max-width:900px){ .area{ grid-template-columns:1fr; padding:36px 0; } .area-list{ columns:1; } }
 </style>
 </head>
 <body>
@@ -606,61 +617,68 @@
     <div class="tile light center servizi-head">
       <div class="inner">
         <p class="kicker">Servizi</p>
-        <h1 id="h-servizi" class="h2">Dieci competenze. Un unico interlocutore.</h1>
+        <h1 id="h-servizi" class="h2">Tre aree. Un unico interlocutore.</h1>
         <p class="lead">A Firenze e provincia: per l'impresa che assume, per la famiglia che eredita, per l'associazione che cresce.</p>
       </div>
     </div>
 
-    <div class="inner"><div class="board">
-      <article class="svc main">
-        <span class="tag">Il cuore dello Studio</span>
-        <h3>Consulenza del lavoro</h3>
-        <p>Buste paga, contratti di assunzione, Certificazioni Uniche e dichiarazioni 730, tenuta della contabilità e predisposizione dei bilanci, gestiti ogni mese senza rincorse.</p>
+    <div class="inner"><div class="areas">
+      <article class="area" id="area-fiscale" aria-labelledby="h-area-fiscale">
+        <div class="area-head">
+          <span class="area-n" aria-hidden="true">01</span>
+          <h3 id="h-area-fiscale">Consulenza Fiscale e Societaria</h3>
+        </div>
+        <ul class="area-list">
+          <li>Gestione delle contabilità (ordinaria, semplificata, regimi agevolati, associazioni sportive e culturali)</li>
+          <li>Predisposizione dei modelli dichiarativi (730, Unico PF, Unico SP, Unico SC)</li>
+          <li>Predisposizione e invio IRAP</li>
+          <li>Studi di settore/ISA</li>
+          <li>Liquidazioni IVA periodiche, comunicazioni LIPE trimestrali, dichiarazione IVA annuale</li>
+          <li>Esterometro</li>
+          <li>Emissione, ricezione e controllo fatture elettroniche</li>
+          <li>Calcolo e gestione IMU/TASI</li>
+          <li>Gestione e controllo del cassetto fiscale e delle deleghe Entratel</li>
+          <li>Comunicazioni SUAP</li>
+          <li>Redazione bilanci e civilistici (per le società)</li>
+          <li>Consulenza su agevolazioni fiscali e bonus</li>
+          <li>Supporto in caso di controlli fiscali e verifiche da parte dell’Agenzia delle Entrate e/o visite ispettive</li>
+          <li>Elaborazione business plan e/o valutazione valore aziendale</li>
+          <li>Predisposizione pratiche camerali</li>
+        </ul>
       </article>
-      <article class="svc">
-        <span class="tag">Colf e badanti</span>
-        <h3>Lavoro domestico</h3>
-        <p>Assunzione e gestione di colf, badanti e babysitter: contratto, buste paga, contributi INPS e TFR. Se ne occupa Barbara.</p>
+      <article class="area" id="area-lavoro" aria-labelledby="h-area-lavoro">
+        <div class="area-head">
+          <span class="area-n" aria-hidden="true">02</span>
+          <h3 id="h-area-lavoro">Consulenza del Lavoro</h3>
+        </div>
+        <ul class="area-list">
+          <li>Elaborazione buste paga mensili</li>
+          <li>Calcolo contributi INPS e previdenza complementare (comprensiva di gestione versamenti a Casse esterne)</li>
+          <li>Predisposizione e invio modelli F24</li>
+          <li>Calcolo TFR e accantonamenti</li>
+          <li>Comunicazioni UNILAV (assunzioni, cessazioni, proroghe, trasformazioni contrattuali)</li>
+          <li>UNIEMENS</li>
+          <li>Autoliquidazioni INAIL</li>
+          <li>Denunce infortuni</li>
+          <li>Procedure disciplinari</li>
+          <li>Assistenza su vertenze sindacali</li>
+          <li>Elaborazione Certificazioni Uniche</li>
+          <li>Modelli 770</li>
+          <li>Gestione DURC e verifiche di regolarità contributiva</li>
+          <li>Supporto nei controlli ispettivi (Ispettorato del Lavoro, INPS, INAIL)</li>
+          <li>Piani Welfare aziendale</li>
+        </ul>
       </article>
-      <article class="svc">
-        <span class="tag">Fisco</span>
-        <h3>Consulenza fiscale e contabile</h3>
-        <p>Dichiarazioni fiscali e tenuta della contabilità per imprese e professionisti.</p>
-      </article>
-      <article class="svc">
-        <span class="tag">Società</span>
-        <h3>Predisposizione bilanci</h3>
-        <p>Redazione del bilancio d'esercizio e deposito presso il Registro delle Imprese.</p>
-      </article>
-      <article class="svc">
-        <span class="tag">Famiglie</span>
-        <h3>Dichiarazioni di successione</h3>
-        <p>Predisposizione della dichiarazione e assistenza in ogni passaggio della pratica successoria.</p>
-      </article>
-      <article class="svc">
-        <span class="tag">Immobili</span>
-        <h3>Contratti di locazione</h3>
-        <p>Redazione, registrazione, proroghe e adempimenti annuali dei contratti di affitto.</p>
-      </article>
-      <article class="svc">
-        <span class="tag">Contenzioso</span>
-        <h3>Perizie tecniche di parte</h3>
-        <p>Perizie sui rapporti di lavoro dipendente, a supporto di aziende e lavoratori, con l'esperienza maturata come CTU.</p>
-      </article>
-      <article class="svc">
-        <span class="tag">Imprese</span>
-        <h3>Valutazioni aziendali</h3>
-        <p>Stime del valore d'impresa per operazioni societarie e passaggi generazionali.</p>
-      </article>
-      <article class="svc">
-        <span class="tag">Contenzioso</span>
-        <h3>Assistenza per cause legali</h3>
-        <p>Supporto tecnico all'avvocato e al cliente nei contenziosi di lavoro e previdenziali.</p>
-      </article>
-      <article class="svc">
-        <span class="tag">Non profit</span>
-        <h3>ASD e Terzo settore</h3>
-        <p>Contabilità, fisco e compensi sportivi per associazioni sportive dilettantistiche ed enti del Terzo settore.</p>
+      <article class="area" id="area-caf" aria-labelledby="h-area-caf">
+        <div class="area-head">
+          <span class="area-n" aria-hidden="true">03</span>
+          <h3 id="h-area-caf">Servizi CAF</h3>
+        </div>
+        <ul class="area-list short">
+          <li>Elaborazione ISEE</li>
+          <li>Successioni</li>
+          <li>Gestione del lavoro domestico</li>
+        </ul>
       </article>
     </div></div>
   </section>
