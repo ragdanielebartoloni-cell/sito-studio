@@ -7,11 +7,11 @@
 <meta name="google-site-verification" content="9Og40pS8KUxkvedcNOWvaHcV0bHMMY1m9ffGaBLQ64k">
 <meta property="og:url" content="https://www.studiobartoloni.com/lo-studio">
 <title>Lo Studio – Studio Bartoloni, Consulente del Lavoro a Firenze</title>
-<meta name="description" content="Daniele, Silvia e Barbara Bartoloni: le persone dello Studio e di cosa si occupano.">
+<meta name="description" content="La storia dello Studio Bartoloni a Firenze: oltre vent’anni di consulenza del lavoro e fiscale a Firenze, in Toscana e in tutta Italia.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Studio Bartoloni">
 <meta property="og:title" content="Lo Studio – Studio Bartoloni, Consulente del Lavoro a Firenze">
-<meta property="og:description" content="Daniele, Silvia e Barbara Bartoloni: le persone dello Studio e di cosa si occupano.">
+<meta property="og:description" content="La storia dello Studio Bartoloni a Firenze: oltre vent’anni di consulenza del lavoro e fiscale a Firenze, in Toscana e in tutta Italia.">
 <meta property="og:image" content="https://www.studiobartoloni.com/immagini-sito/anteprima-condivisione.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -533,6 +533,27 @@
   .gnav ul li + li{ border-left:0; }
   @media (min-width:981px){ .gnav ul a{ padding:4px 20px; } }
   @media (max-width:600px){ .tile.hero .kicker{ letter-spacing:.28em; padding-left:.28em; } .tile.hero .ctas{ flex-direction:column; align-items:stretch; max-width:340px; margin-inline:auto; } }
+
+  /* Lo Studio: history with photos (mockup lo studio.jpeg, 2026-10-21) */
+  .storia{ display:grid; grid-template-columns:minmax(0, 47fr) minmax(0, 53fr); background:#fff; min-height:min(820px, calc(100vh - 88px)); }
+  .storia-text{ padding:56px 40px 56px max(24px, calc((100vw - 1200px) / 2 + 24px)); align-self:center; color:#1b2433; }
+  .storia-kicker{ display:flex; align-items:center; gap:22px; margin:0; font-family:var(--serif); font-size:14px; letter-spacing:.32em; text-transform:uppercase; }
+  .storia-kicker span{ background:linear-gradient(90deg, #4b4fc6, #b03ca6 55%, #d4543a); -webkit-background-clip:text; background-clip:text; color:transparent; white-space:nowrap; }
+  .storia-kicker::after{ content:""; flex:1; max-width:360px; height:1px; background:linear-gradient(90deg, #6b4fd0, #d0456f, #e3a23a, #3fa86b, #3b8fd6); }
+  .storia .h2{ font-size:clamp(36px, 3.8vw, 60px); line-height:1.08; color:#141c28; margin:28px 0 0; text-align:left; letter-spacing:0; }
+  .storia-rule{ display:block; width:44px; height:2px; background:#3d5a99; margin:24px 0 22px; }
+  .storia-text p:not(.storia-kicker){ font-size:clamp(15px, 1.12vw, 18px); line-height:1.6; color:#26303f; margin:0 0 1em; max-width:40em; text-align:left; }
+  .storia-photos{ position:relative; overflow:hidden; min-height:520px; }
+  .storia-photos img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .storia-photos .ph-top{ height:70%; clip-path:polygon(0 0, 100% 0, 100% 51.4%, 88.59% 59.1%, 76.88% 66.3%, 64.84% 73.0%, 52.5% 79.3%, 39.84% 85.1%, 26.88% 90.5%, 13.59% 95.5%, 0% 100.0%); object-position:15% 60%; }
+  .storia-photos .ph-bot{ top:36%; height:64%; clip-path:polygon(0% 53.1%, 13.59% 48.2%, 26.88% 42.8%, 39.84% 36.9%, 52.5% 30.5%, 64.84% 23.6%, 76.88% 16.2%, 88.59% 8.3%, 100% 0.0%, 100% 100%, 0 100%); object-position:50% 85%; }
+  .storia-curves{ position:absolute; inset:0; width:100%; height:100%; }
+  @media (max-width:980px){
+    .storia{ grid-template-columns:1fr; min-height:0; }
+    .storia-text{ padding:44px 20px 24px; }
+    .storia-photos{ min-height:0; height:clamp(320px, 90vw, 560px); }
+    .storia-curves path:first-child{ display:none; }
+  }
 </style>
 </head>
 <body>
@@ -559,11 +580,11 @@
     </a>
     <ul id="nav-menu">
       <li><a href="/">Home</a></li>
-      <li><a href="/chi-siamo">Chi siamo</a></li>
+      <li><a href="/lo-studio" aria-current="page">Lo Studio</a></li>
       <li><a href="/servizi">Servizi</a></li>
+      <li><a href="/chi-siamo">Chi siamo</a></li>
       <li><a href="/come-lavoriamo">Come lavoriamo</a></li>
       <li><a href="/scadenze">Scadenze</a></li>
-      <li><a href="/lo-studio" aria-current="page">Lo Studio</a></li>
       <li><a href="/contatti">Contatti</a></li>
     </ul>
     <div class="nav-actions">
@@ -584,27 +605,23 @@
 
 
 <!--page:persone--><div class="page" data-page="persone">
-  <section id="persone" class="tile light center" aria-labelledby="h-persone">
-    <div class="inner">
-      <p class="kicker">Lo Studio</p>
-      <h1 id="h-persone" class="h2">Le persone che la seguono.</h1>
-      <div class="people">
-        <div class="person">
-          <span class="avatar" aria-hidden="true">DB</span>
-          <p class="name">Daniele Bartoloni</p>
-          <p class="role">Consulente del Lavoro dal 2004</p>
-        </div>
-        <div class="person">
-          <span class="avatar" aria-hidden="true">SB</span>
-          <p class="name">Silvia Bartoloni</p>
-          <p class="role">Collaboratrice dello Studio · Gestione contabile, gestione personale dipendente, elaborazione dichiarativi</p>
-        </div>
-        <div class="person">
-          <span class="avatar" aria-hidden="true">BB</span>
-          <p class="name">Barbara Bartoloni</p>
-          <p class="role">Collaboratrice dello Studio · Lavoro domestico, recupero documentazione per successioni, pratiche CCIAA</p>
-        </div>
-      </div>
+  <section id="persone" class="storia" aria-labelledby="h-storia">
+    <div class="storia-text">
+      <p class="storia-kicker"><span>Lo Studio · Firenze</span></p>
+      <h1 id="h-storia" class="h2">La precisione<br>ha una storia.</h1>
+      <span class="storia-rule" aria-hidden="true"></span>
+      <p>Il nostro Studio opera da oltre venti anni sul territorio fiorentino, toscano e nazionale offrendo un’assistenza a 360 gradi a piccole realtà fino ad aziende più strutturate.</p>
+      <p>Il nostro lavoro accompagna il cliente in tutte le fasi della sua attività: dalla gestione del personale e dall'elaborazione delle buste paga alla consulenza fiscale e societaria, dalla contabilità alla predisposizione del bilancio, fino all'assistenza nelle situazioni più complesse, che richiedono approfondimenti tecnici e valutazioni specialistiche.</p>
+      <p>L'esperienza maturata anche nell'ambito delle consulenze tecniche d'ufficio (CTU) e degli incarichi affidati in ambito ministeriale per l'elaborazione dei cedolini paga di cooperative in procedura concorsuale completa un patrimonio di competenze che mettiamo a disposizione dei nostri clienti.</p>
+      <p>Il valore dello Studio nasce dall'integrazione delle competenze, dal lavoro di squadra e dalla continuità del rapporto con il cliente. Perché dietro ogni adempimento c’è una realtà da comprendere, tutelare e accompagnare nelle proprie scelte.</p>
+    </div>
+    <div class="storia-photos">
+      <img class="ph-top" src="/immagini-sito/studio-calcolatore.jpg" alt="Calcolatrice meccanica Facit accanto alle Istituzioni di diritto civile del Trabucchi, sulla scrivania dello Studio" width="1448" height="1086" loading="lazy">
+      <img class="ph-bot" src="/immagini-sito/studio-macchina.jpg" alt="Macchina da scrivere dello Studio vista dall'alto" width="1465" height="1073" loading="lazy">
+      <svg class="storia-curves" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 0 H1 C13 30 13 68 2 100 H0 Z" fill="#fff"/>
+        <path d="M0 70 Q55 58 100 36" fill="none" stroke="#fff" stroke-width="7" vector-effect="non-scaling-stroke"/>
+      </svg>
     </div>
   </section>
 </div><!--/page:persone-->
