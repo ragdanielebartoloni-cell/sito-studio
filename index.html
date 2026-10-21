@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Studio Bartoloni">
 <meta property="og:title" content="Studio Bartoloni – Consulente del Lavoro a Firenze">
-<meta property="og:description" content="Lavoro e fisco. Un solo Studio. Primo incontro gratuito, in Studio o al telefono.">
+<meta property="og:description" content="Consulenza del Lavoro e Fiscale. Un unico Studio, dalla tua parte. Primo incontro gratuito, in Studio o al telefono.">
 <meta property="og:image" content="https://www.studiobartoloni.com/immagini-sito/anteprima-condivisione.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -447,6 +447,12 @@
   .skyline .sk-near-line{ stroke:#8a8a8a; stroke-width:1.6; }
   .skyline .sk-near{ fill:#ececec; }
   .skyline .sk-river{ fill:#9a9a9a; }
+  .sky-watercolor{ max-width:min(700px, 100%); margin:8px auto 10px; }
+  .sky-watercolor img{ display:block; width:100%; height:auto; }
+  .hero .display{ max-width:none; }
+  .tile.hero .display{ font-size:clamp(32px, 4.2vw, 54px); }
+  .tile.hero{ padding-top:28px; }
+  .tile.hero .hero-sub{ font-family:var(--serif); font-size:clamp(20px, 2.4vw, 28px); line-height:1.3; color:#555; margin:10px 0 0; }
 
   /* grids drawn with hairlines, no coloured cards */
   .board, .steps, .cgrid{ gap:1px; background:var(--hairline); border:1px solid var(--hairline); }
@@ -531,6 +537,7 @@
       <span class="brand-name">Studio <span>Bartoloni</span></span>
     </a>
     <ul id="nav-menu">
+      <li><a href="/" aria-current="page">Home</a></li>
       <li><a href="/chi-siamo">Chi siamo</a></li>
       <li><a href="/servizi">Servizi</a></li>
       <li><a href="/come-lavoriamo">Come lavoriamo</a></li>
@@ -554,24 +561,9 @@
   <section class="tile hero center" aria-labelledby="h-hero">
     <div class="inner hero-copy">
       <p class="kicker">Consulente del Lavoro</p>
-      <p class="place">Firenze</p>
-      <div class="sky-band" aria-hidden="true">
-        <svg class="skyline" viewBox="0 50 1200 250" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
-          <defs>
-            <linearGradient id="sky-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-            <mask id="sky-reflect" maskUnits="userSpaceOnUse" x="-1400" y="273" width="4000" height="30"><rect x="-1400" y="273" width="4000" height="30" fill="url(#sky-fade)"/></mask>
-            <g id="sk-far"><path d="M-1400,226C-1100,212 -800,222 -500,214C-300,209 -120,226 0,232V270H-1400ZM1200,210C1420,203 1640,224 1860,214C2060,206 2300,222 2600,216V270H1200ZM-1400,250h1400v20h-1400zM1200,252h1400v18h-1400zM0,232C90,214 170,206 260,218C340,229 400,212 480,214C560,216 600,226 680,222C780,217 860,200 960,206C1050,211 1120,196 1200,210V270H0ZM40,224h60v46h-60zM520,226h40v44h-40zM860,222h50v48h-50zM1030,228h70v42h-70zM1150,232h50v38h-50z"/><ellipse cx="1060" cy="198" rx="5" ry="18"/><ellipse cx="1074" cy="203" rx="4" ry="13"/><ellipse cx="1132" cy="190" rx="5" ry="18"/><ellipse cx="1146" cy="196" rx="4" ry="13"/><ellipse cx="118" cy="206" rx="4" ry="14"/><ellipse cx="131" cy="201" rx="5" ry="18"/></g>
-            <path id="sk-near" d="M-1400,258h1400v12h-1400zM1200,258h1400v12h-1400zM-260,246h70v24h-70zM-150,240h60v30h-60zM1260,242h60v28h-60zM1380,248h80v22h-80zM0,246h40v24h-40zM30,238h50v32h-50zM80,244h70v26h-70zM150,238H330V270H320Q296,247 272,270H264Q240,247 216,270H208Q184,247 160,270H150ZM160,226h160v12h-160zM170,221h30v5h-30zM215,219h40v7h-40zM270,221h35v5h-35zM330,236h50v34h-50zM380,198h100v72h-100zM380,192h5v6h-5zM390,192h5v6h-5zM400,192h5v6h-5zM410,192h5v6h-5zM420,192h5v6h-5zM430,192h5v6h-5zM440,192h5v6h-5zM450,192h5v6h-5zM460,192h5v6h-5zM470,192h5v6h-5zM422,128h16v70h-16zM416,112h28v16h-28zM416,107h3v5h-3zM422,107h3v5h-3zM428,107h3v5h-3zM434,107h3v5h-3zM440,107h3v5h-3zM425,88h10v24h-10zM423,90L430,70L437,90ZM480,232h60v38h-60zM540,222h60v48h-60zM552,150h14v72h-14zM552,145h3v5h-3zM557,145h3v5h-3zM562,145h3v5h-3zM610,190h14v80h-14zM610,192L617,136L624,192ZM600,238h46v32h-46zM646,108h24v162h-24zM643,104h30v6h-30zM670,214h50v56h-50zM668,214L695,200L722,214ZM704,198h112v72h-112zM712,178h96v22h-96zM716,180C716,130 740,104 760,96C780,104 804,130 804,180ZM754,82h12v14h-12zM751,84L760,64L769,84ZM808,230C808,212 822,204 836,204C850,204 864,212 864,230ZM808,230h56v40h-56zM864,240h46v30h-46zM910,270V206L945,180L980,206V270ZM990,166h12v104h-12zM988,166L996,140L1004,166ZM1004,236h46v34h-46zM1050,244h60v26h-60zM1110,236h40v34h-40zM1150,246h50v24h-50z"/>
-          </defs>
-          <use href="#sk-far" class="sk-far-line"/>
-          <use href="#sk-far" class="sk-far"/>
-          <use href="#sk-near" class="sk-near-line"/>
-          <use href="#sk-near" class="sk-near"/>
-          <rect class="sk-river" x="-1400" y="270" width="4000" height="1.6"/>
-          <g mask="url(#sky-reflect)"><g transform="translate(0,543) scale(1,-1)"><use href="#sk-near" class="sk-near-line"/><use href="#sk-near" class="sk-near"/></g></g>
-        </svg>
-      </div>
-      <h1 id="h-hero" class="display">Lavoro e fisco. Un solo Studio.</h1>
+      <div class="sky-watercolor"><img src="/immagini-sito/firenze-acquerello.jpg" alt="Firenze ad acquerello: Ponte Vecchio, Palazzo Vecchio, il campanile di Giotto e la Cupola" width="1720" height="600"></div>
+      <h1 id="h-hero" class="display">Consulenza del Lavoro e Fiscale.</h1>
+      <p class="hero-sub">Un unico Studio, dalla tua parte.</p>
       <p class="lead">Assistenza giuslavoristica e fiscale a imprese, professionisti, associazioni sportive ed enti del Terzo settore.</p>
       <ul class="trust">
         <li>Iscritto all'Albo dal 2004</li>
@@ -581,21 +573,6 @@
       <div class="ctas">
         <a class="pill" href="/contatti" data-contact>Richiedi un appuntamento</a>
         <a class="more" href="/servizi">Scopri i servizi</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="tile light center" aria-labelledby="h-home">
-    <div class="inner">
-      <p class="kicker">Lo Studio</p>
-      <h2 id="h-home" class="h2">Da dove vuole cominciare?</h2>
-      <div class="board home-links">
-        <a class="svc" href="/chi-siamo"><span class="tag">Chi siamo</span><h3>Consulenza del lavoro, fiscale e societaria</h3><span class="more">Chi siamo</span></a>
-        <a class="svc" href="/servizi"><span class="tag">Servizi</span><h3>Dieci competenze, un unico interlocutore</h3><span class="more">Tutti i servizi</span></a>
-        <a class="svc" href="/come-lavoriamo"><span class="tag">Come lavoriamo</span><h3>Tre passi, nessuna sorpresa</h3><span class="more">Il metodo</span></a>
-        <a class="svc" href="/scadenze"><span class="tag">Scadenze</span><h3>Le date da non perdere</h3><span class="more">Le scadenze del mese</span></a>
-        <a class="svc" href="/lo-studio"><span class="tag">Lo Studio</span><h3>Le persone che la seguono</h3><span class="more">Le persone</span></a>
-        <a class="svc" href="/contatti"><span class="tag">Contatti</span><h3>Parliamone di persona</h3><span class="more">Contatti e orari</span></a>
       </div>
     </div>
   </section>
